@@ -1,50 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;CSS Envelope + Letter (Open/Close on Click)&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="./style.css"&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="envelope-wrapper"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="envelope"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="letter"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;strong&gt;𝓭𝓮𝓪𝓻 𝓪𝓷𝓱 𝓲𝓾,&lt;/strong&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>em không biết rằng liệu anh có háo hức về việc em sắp sang thăm anh không,<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                            </span>nhưng em đang đếm ngược từng ngày chỉ để được gặp anh này.</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>em yêu anh nhiều ᡣ𐭩</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="heart"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const envelope = document.querySelector('.envelope-wrapper');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>envelope.addEventListener('click', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>envelope.classList.toggle('flap');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>𝓭𝓮𝓪𝓻 𝓪𝓷𝓱 𝓲𝓾</strong>
+                        <p>
+                            em không biết rằng liệu anh có háo hức về việc em sắp sang thăm anh không, 
+                            nhưng em đang đếm ngược từng ngày chỉ để được gặp anh này.
+                            em yêu anh nhiều ᡣ𐭩 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
 </body>
 </html>
